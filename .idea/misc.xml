@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects/vt_speedup_android/app/src/main/res/layout/activity_agent_order_details.xml" value="0.29814814814814816" />
+        <entry key="..\:/Projects/vt_speedup_android/app/src/main/res/layout/activity_cart.xml" value="0.36614583333333334" />
+        <entry key="..\:/Projects/vt_speedup_android/app/src/main/res/layout/activity_client_order_details.xml" value="0.67" />
+        <entry key="..\:/Projects/vt_speedup_android/app/src/main/res/layout/activity_client_orders.xml" value="0.3605128205128205" />
+        <entry key="..\:/Projects/vt_speedup_android/app/src/main/res/layout/activity_in_progress_order.xml" value="0.30092592592592593" />
+        <entry key="..\:/Projects/vt_speedup_android/app/src/main/res/layout/activity_product_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Projects/vt_speedup_android/app/src/main/res/layout/list_item_cart_product.xml" value="0.36666666666666664" />
+        <entry key="..\:/Projects/vt_speedup_android/app/src/main/res/layout/list_item_order_content.xml" value="0.1875" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/drawable/ic_login_white.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/drawable/ic_notifications_none_24px.xml" value="0.33401430030643514" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/drawable/orange_arrow_right.xml" value="0.24791666666666667" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/drawable/rounded_corners_orenge.xml" value="0.338100102145046" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/drawable/rounded_corners_solid.xml" value="0.338100102145046" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/drawable/rounded_white_solid.xml" value="0.33401430030643514" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_add_bank_account.xml" value="0.3203125" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_add_ticket_reply.xml" value="0.31409601634320733" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_agent_add_ticket.xml" value="0.5" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_agent_contact_us.xml" value="0.22068403908794787" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_agent_main.xml" value="0.5" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_agent_order_details.xml" value="0.271875" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_agent_profile.xml" value="0.21" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_bank_account.xml" value="0.33" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_base.xml" value="0.3494791666666667" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_cart.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_client_add_ticket.xml" value="0.5" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_client_main.xml" value="0.25" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_client_order_details.xml" value="0.22" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_client_orders.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_client_profile.xml" value="0.2" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_coupons.xml" value="0.5" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_edit_bank_account.xml" value="0.25" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_financial_movements.xml" value="0.22" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_in_progress_order.xml" value="0.33" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_notification.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_payment_cards.xml" value="0.5" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_payment_methods.xml" value="0.18177083333333333" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_product_details.xml" value="0.22" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_search_shops.xml" value="0.2" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_shop_details.xml" value="0.16" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_suggest.xml" value="0.23125" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_support2.xml" value="0.23125" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_support3.xml" value="0.23125" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_terms_and_conditions.xml" value="0.39537037037037037" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_tracking.xml" value="0.3203125" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/activity_wallet.xml" value="0.33" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/dialog_list.xml" value="0.25" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/dialog_message.xml" value="0.3962962962962963" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/list_item_coupon.xml" value="0.25" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/list_item_option.xml" value="0.3074074074074074" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/list_item_order.xml" value="0.33" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/list_item_order_content.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/list_item_transaction.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/row_band_acount.xml" value="1.1" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/row_item_notification.xml" value="0.25" />
+        <entry key="..\:/Users/Osama/AndroidStudioProjects/vt_speedup_android/app/src/main/res/layout/side_menu_view.xml" value="0.35052083333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="17" project-jdk-type="JavaSDK" />
+</project>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "199442720819",
+    "firebase_url": "https://mitra-fast-default-rtdb.firebaseio.com",
+    "project_id": "mitra-fast",
+    "storage_bucket": "mitra-fast.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199442720819:android:7e8daaba72e84fabad9b46",
+        "android_client_info": {
+          "package_name": "com.linkpcom.mitrafast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199442720819-52u8q6e3t1v3krccccrtqtrnnhdkagll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.linkpcom.mitrafast",
+            "certificate_hash": "77808049594ba1db6306ee4092ac1b519f52a32f"
+          }
+        },
+        {
+          "client_id": "199442720819-jsk5qskg2kpi2sf02gsheovtv1gim47q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.linkpcom.mitrafast",
+            "certificate_hash": "95c2a2f1973ddfc024f97119caada60221310fe2"
+          }
+        },
+        {
+          "client_id": "199442720819-9do03fuaivj6kq1njae03u3bab647oe2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGYZnG61jKpjrhjW5nqXUKRY5kx4vjlfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199442720819-9do03fuaivj6kq1njae03u3bab647oe2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "199442720819-ti59pqvfnu2r12e1plmppq5ia1ev0587.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.linkp.miltrafast"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

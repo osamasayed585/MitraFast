@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ميترا فاست</string>
+
+
+    <!--General Strings-->
+    <string name="errorRequired">مطلوب</string>
+    <string name="error_validation_code_message">يجب أن يكون رمز التحقق من الصحة 4 أرقام</string>
+    <string name="errorWrongPhoneNumberMessage">يجب أن يكون رقم الهاتف على الأقل</string>
+    <string name="errorPasswordMatchingMessage">كلمة المرور غير متطابقة</string>
+    <string name="errorInvalidEmail">بريد إلكتروني خاطئ</string>
+    <string name="errorWrongStartPhoneNumberMessage">يجب أن يبدأ رقم الجوال بـ</string>
+    <string name="error">خطأ</string>
+    <string name="ok">حسناً</string>
+    <string name="next">التالي</string>
+    <string name="skip">تخطي</string>
+    <string name="dismiss">اغلاق</string>
+    <string name="save">حفظ</string>
+    <string name="login_first_message">يرجى تسجيل الدخول أولا</string>
+    <string name="confirm">تأكيد</string>ذ
+    <string name="cancel">الغاء</string>
+    <string name="iban_number_should_be_22_digit">رقم الايبان يجب ان يكون 22 رقم</string>
+
+
+    <!--    LocationUpdatesService-->
+    <string name="working">مشغول</string>
+    <string name="locationUpdateMessage">خدمة تحديثات الموقع قيد التشغيل</string>
+    <string name="permissionMessage">السماح بالأذونات</string>
+    <string name="available">متاح</string>
+
+
+    <string name="arabic">عربي</string>
+    <string name="english">إنجليزي</string>
+    <string name="main">الرئيسية</string>
+    <string name="faq">الاسئلة الشائعة</string>
+    <string name="saved_locations">الأماكن المحفوظة</string>
+
+    <string name="contact_us">تواصل معنا</string>
+    <string name="about_us">عن ميترا فاست</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="cart">السلة</string>
+    <string name="wallet">المحفظة</string>
+    <string name="profile">حسابي</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="distance">المسافة</string>
+    <string name="name">الاسم :</string>
+    <string name="mobile_number">رقم الجوال</string>
+    <string name="address">العنوان :</string>
+    <string name="order_status">حالة الطلب</string>
+    <string name="all_previous_orders">كل الطلبات السابقة</string>
+    <string name="sareei_is">ماهو ميترا فاست</string>
+    <string name="write_your_message">أكتب رسالتك</string>
+    <string name="register_as_provider">تسجيل كمزود خدمة</string>
+
+    <string name="send">إرسال</string>
+    <string name="bill_details">تفاصيل الفاتورة</string>
+    <string name="collection_price">اجمالي المنتجات :</string>
+    <string name="total">الإجمالي :</string>
+    <string name="notes_for_restaurant">ملاحظات للمطعم؟</string>
+    <string name="add_coupon">أضف كوبون</string>
+    <string name="apply">تطبيق</string>
+    <string name="price_delivery">السعر للتوصيل</string>
+    <string name="refuse">رفض</string>
+    <string name="accept">قبول</string>
+    <string name="arriving_time">وقت الوصول</string>
+    <string name="password">كلمة المرور</string>
+
+    <!--    LoginActivity-->
+    <string name="register">إنشاء حساب جديد</string>
+    <string name="verification">التحقق</string>
+    <string name="please_enter_the_activation_code_sent_to_your_mobile_phone">يرجى إدخال رمز التفعيل المرسل على رقم جوالك</string>
+    <string name="dd_image">أضف صورة</string>
+    <string name="personal_information">المعلومات الشخصية</string>
+    <string name="identity_num">رقم الهوية</string>
+    <string name="date_of_birth">تاريخ الميلاد</string>
+    <string name="attach_licence_pic">ارفاق رخصة القيادة</string>
+    <string name="iban_num">رقم الحساب  </string>
+    <string name="click_to_attach_pic">قم بالضغط على الزر لارفاق الصور</string>
+    <string name="attach_identity_pic">ارفاق صورة الهوية</string>
+    <string name="car_info">2 - معلومات السيارة</string>
+    <string name="account_owner_name">اسم العميل  </string>
+    <string name="bank_type">نوع البنك</string>
+    <string name="choose_bank">قم باختيار البنك من القائمة</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="year">سنة</string>
+    <string name="month">شهر</string>
+    <string name="day">يوم</string>
+    <string name="completed_orders">الطلبات المنجزة</string>
+    <string name="last_order_state">حالة الطلب الاخير</string>
+    <string name="ready_to_receive">جاهز لاستلام الطلبات ؟</string>
+    <string name="disable">تعطيل</string>
+    <string name="membership_num">رقم العضوية :</string>
+    <string name="data_panel">لوحة البيانات</string>
+    <string name="canceled_orders">الطلبات الجارية</string>
+    <string name="pending_orders">الطلبات المعلقة</string>
+    <string name="all_orders">كل الطلبات</string>
+    <string name="activate">تفعيل</string>
+    <string name="all_orders_list">كل قائمة الطلبات الجديدة</string>
+    <string name="notifications">اشعارات</string>
+    <string name="client_order_details">تفاصيل طلب العميل</string>
+    <string name="click_go">اضغط للحصول على الاتجاهات</string>
+    <string name="contact_with_client">تواصل مع العميل</string>
+    <string name="deliver_cost">مبلغ التوصيل :</string>
+    <string name="order_delivered">تم تسليم الطلب</string>
+    <string name="order_number">رقم الطلب</string>
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="ignore">تجاهل</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="name_on_id">الاسم على الهوية</string>
+    <string name="the_name_that_appears_to_the_customer">الاسم الذي يظهر للعميل</string>
+    <string name="submit_your_order">تقديم طلبك</string>
+    <string name="financial_movement">الحركة المالية</string>
+    <string name="terms_and_conditions">الشروط والاحكام</string>
+    <string name="bank_account">الحساب البنكي</string>
+    <string name="total_purchases">اجمالي المشتريات :</string>
+    <string name="sareei_commission">عمولة ميترا فاست</string>
+    <string name="order_date">تاريخ الطلب :</string>
+    <string name="payment_method">طريقة الدفع :</string>
+    <string name="finance_side">الجانب المالي</string>
+    <string name="delete">حذف</string>
+    <string name="ticketNo">رقم التذكرة</string>
+    <string name="ticket_type">نوع التذكرة</string>
+    <string name="ticketState">حالة التذكرة</string>
+
+
+    <!--    ProfileActivity-->
+
+    <!--    MessageDialog-->
+    <string name="the_message_has_been_sent_we_will_contact_you_soon_via_mail">شكرا لتواصلك مع الادارة سوف نقوم بالرد عليك فى اقرب وقت</string>
+    <string name="main_page">الصفحة الرئيسية</string>
+    <string name="continue_process">إكمال العملية</string>
+
+    <!--    ProviderRegisterActivity-->
+    <string name="send_register_request">ارسال طلب التسجيل</string>
+
+    <!--    ShopRegisterActivity-->
+    <string name="select_location">Select location</string>
+    <string name="store_mobile_number">رقم المتجر</string>
+    <string name="owner_mobile_number">رقم جوال المسؤول</string>
+    <string name="commercial_registration_number">رقم السجل التجاري</string>
+    <string name="store_name_en">اسم المتجر انجليزي</string>
+    <string name="store_name_ar">اسم المتجر عربي</string>
+    <string name="work_times">مواعيد العمل</string>
+    <string name="select_start_work_time">اختر ميعاد بدأ العمل</string>
+    <string name="select_end_work_time">اختر ميعاد انتهاء العمل</string>
+    <string name="select_start_work_time_first">اختر ميعاد بدأ العمل أولا</string>
+
+    <!--    ActivateAccountActivity-->
+    <string name="resend_code"><u>اعادة ارسال رمز التفعيل</u></string>
+    <string name="remaining">متبقي:</string>
+    <string name="for_resend">لاعادة ارسال رمز التفعيل</string>
+
+    <!--    RegisterActivity-->
+    <string name="select_profile_image">اختر صورة البروفايل</string>
+
+
+    <!--    PickLocationActivity-->
+
+    <!--    ActivateAccountActivity-->
+
+
+    <!--    RegisterActivity-->
+    <string name="profile_image_message">يجب أن تختار صورة البروفايل</string>
+    <string name="identity_image_message">يجب أن تختار صورة الهوية أو الإقامة</string>
+    <string name="driving_license_image_message">يجب أن تختار صورة رخصة القيادة</string>
+    <string name="car_insurance_image_message">يجب اختيار صورة استمارة السيارة</string>
+    <string name="attach_a_copy_of_the_driving_licenses_the_form">ارفاق صورة رخص السير (الاستمارة)</string>
+
+    <!--    AgentMainActivity-->
+    <string name="membership_number">رقم العضوية</string>
+    <string name="finished_orders">الطلبات السابقة</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="not_approved_yet">بانتظار موافقة الادارة</string>
+
+    <!--    AddTicketActivity-->
+    <string name="attach_image">ارفاق صورة</string>
+    <string name="select_ticket_type">اختر نوع التذكرة</string>
+    <string name="select_ticket_images">أضف صور التذكرة</string>
+
+    <!--    ContactUsActivity-->
+    <string name="open_new_ticket">فتح تذكرة جديدة</string>
+
+    <!--    ShopsAdapter-->
+    <string name="open_now">مفتوح الآن</string>
+    <string name="closed_now">مغلق الآن</string>
+
+    <!--    NewOrdersAdapter-->
+
+    <!--    OrderDetailsActivity-->
+    <string name="client_location">موقع العميل</string>
+    <string name="agent_waiting_message">بانتظار رد العميل عنك عرضك</string>
+
+    <!--    DeleteOrderDialogAdapter-->
+    <string name="select_cancel_order_reason">حدد سبب إلغاء الطلب</string>
+
+
+    <!--    ConfirmDialog-->
+    <string name="confirm_order_delivery">تأكيد تسليم الطلب</string>
+
+
+    <!--    RateClientActivity-->
+    <string name="order_has_been_delivered_successfully">تم توصيل الطلب بنجاح</string>
+    <string name="rate_client">قم بتقييم العميل</string>
+
+    <!--    RateAgentActivity-->
+    <string name="rate_agent">قم بتقييم المندوب</string>
+
+
+    <!--    ProductDetailsActivity-->
+    <string name="type">الأنواع</string>
+    <string name="size">الأحجام</string>
+    <string name="extras">الإضافات</string>
+    <string name="choices">الخيارات</string>
+    <string name="add_to_cart">أضف إلى السلة</string>
+
+
+    <!--    ProductDetailsActivity-->
+    <string name="this_product_is_from_another_merchant">هذا المنتج من تاجر آخر, هل تريد مسح كل منتجات السلة لاضافة هذا المنتج</string>
+
+
+    <!--    CartActivity-->
+    <string name="select_payment_method">اختر طريقة الدفع</string>
+    <string name="select_delivery_location">اختر مكان التوصيل</string>
+    <string name="are_you_sure_you_want_to_delete_this_product">هل أنت متأكد من مسح المنتج من السلة ؟</string>
+    <string name="discount_rate">خصم نسبة</string>
+    <string name="discount_on_delivery_cost">الخصم على مبلغ التوصيل</string>
+
+
+    <!--    FavoritePlacesActivity-->
+    <string name="add_location">أضف موقع</string>
+    <string name="no_addresses">لا توجد عناوين مسجلة</string>
+    <string name="choose_a_delivery_location_or_add_a_new_location">اختر مكان التوصيل أو اضف موقع جديد</string>
+
+
+    <!--    PickLocationDataActivity-->
+    <string name="location_address">عنوان الموقع</string>
+    <string name="complete_data">أكمل البيانات</string>
+    <string name="location_name">اسم الموقع</string>
+
+    <!--    FavoritePlacesAdapter-->
+    <string name="delete_from_addresses">هل أنت متأكد من أنك تريد مسح هذا العنوان ؟</string>
+
+    <!--    LocatingActivity-->
+    <string name="cancel_order">إلغاء الطلب</string>
+    <string name="client_waiting_message">جاري البحث عن أقرب مندوب لك شكرا لطلبك من ميترا فاست</string>
+
+
+    <!--    ClientOrderDetailsActivity-->
+    <string name="order_was_listed_successfully">تم ادراج الطلب</string>
+    <string name="your_request_is_in_progress">طلبك قيد التجهيز</string>
+    <string name="your_request_with_agent">طلبك مع مندوب التوصيل</string>
+    <string name="agent_has_arrived">مندوب التوصيل وصل</string>
+    <string name="contact_with_agent">تواصل مع المندوب</string>
+    <string name="order_number_label">رقم الطلب :</string>
+    <string name="client_order_details_label">تفاصيل طلب العميل :</string>
+
+
+    <!--    InProgressOrderActivity-->
+    <string name="change_order_status">تغيير حالة الطلب</string>
+
+
+    <!--    OrderStatusDialog-->
+    <string name="choose_one_of_these_statuses">اختر أحد هذه الحالات</string>
+    <string name="you_should_select_statuses_in_order">يجب أن تختار الحالات بالترتيب</string>
+    <string name="order_note">ملاحظات على الطلب</string>
+
+    <!--    FinancialMovementsActivity-->
+    <string name="click_to_pay_commission">اضغط لسداد العمولة</string>
+    <string name="you_can_pay_commission_via_credit_and_debit_cards_click_on_the_button_below_to_complete_the_payment_process">بإمكانك تسديد العمولة عبر البطاقات الائتمانية وبطاقات الصراف. قم بالضغط على الزر بالاسفل لاكمال عملية تسديد المبلغ المستحق</string>
+    <string name="your_commission">العمولة المستحقة عليك</string>
+
+    <!--    PaymentStatusActivity-->
+    <string name="payment_succeeded">نجحت عملية الدفع</string>
+    <string name="payment_failed">فشلت عملية الدفع</string>
+
+    <!--    ShopDetailsActivity-->
+    <string name="all">الكل</string>
+    <string name="search_for_product">ابحث عن منتج…</string>
+
+    <!--    OrdersActivity-->
+    <string name="orders">طلبات</string>
+    <string name="track_order">تتبع طلبك</string>
+    <string name="cart_is_empty">السلة فارغة</string>
+
+
+    <!--    ClientMainActivity-->
+    <string name="exit_from_mitra_fast">الخروج من تطبيق ميترا فاست</string>
+    <string name="do_you_want_to_exit">هل أنت متأكد من أنك ترغب بالخروج من التطبيق؟</string>
+    <string name="exit_btn">خروج</string>
+    <string name="discard_btn">إلغاء</string>
+
+    <!--    LoginTypeActivity-->
+
+    <!--    EditBankAccountActivity-->
+    <string name="edit">تعديل</string>
+
+    <!--    ShopsActivity-->
+
+
+    <!--    ProductDetailsActivity-->
+    <string name="minimum_extras_count_is">أقل عدد من الإضافات</string>
+    <string name="and_maximum">وأعلى عدد</string>
+    <string name="minimum_choices_count_is">أقل عدد من الاختيارات</string>
+
+    <!--    ChangeForgottenPasswordActivity-->
+
+
+    <string name="delivery_cost">قيمة التوصيل : </string>
+    <string name="best_seller">الأكثر مبيعا</string>
+    <string name="offers">العروض</string>
+    <string name="others">أخرى</string>
+    <string name="delivery_to">التوصيل لــ</string>
+    <string name="search_for_your_meal_or_drink">ابحث عن وجبتك أو مشروبك</string>
+    <string name="search_for_restaurants_and_cafes">ابحث عن المطاعم والكافيهات</string>
+    <string name="delivery">قيمة التوصيل: </string>
+    <string name="notices">الملاحظات</string>
+    <string name="insert_notices">أدخل الملاحظات</string>
+    <string name="orders_total">إجمالي الطلبات</string>
+    <string name="continue_order">أكمل الطلب</string>
+    <string name="mitra_fast_app_captain">كابتن ميترا فاست</string>
+    <string name="edit_number">تعديل الرقم</string>
+    <string name="agree_on">الموافقة على</string>
+    <string name="agree_on_terms_and_conditions">وافق على الشروط والأحكام</string>
+    <string name="agree">أوافق</string>
+    <string name="add_balance">شحن المحفظة</string>
+
+    <string name="operations">العمليات</string>
+    <string name="add_date">تاريخ الإضافة</string>
+    <string name="value">القيمة</string>
+
+    <string name="payment_methods">طرق الدفع</string>
+    <string name="add_new_card">إضافة بطاقة جديدة</string>
+    <string name="add">إضافة</string>
+    <string name="insert_charge_amount">شحن رصيد المحفظة</string>
+    <string name="insert_amount"><font size="13">الرصيد المراد شحنه</font></string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="expiry_date">وقت الاستفادة من الكوبون</string>
+    <string name="cvv">رمز التحقق CVV</string>
+    <string name="note">ملاحظة:</string>
+    <string name="note_1_will_be_withdrawn_to_validate_the_card_is_then_returned_to_your_wallet_balance_automatically">ملاحظة: سيتم سحب مبلغ 1 دولار للتأكد من صلاحية البطاقة ومن ثم إعادة المبلغ إلى رصيد محفظتك بشكل تلقائي</string>
+    <!--    <string name="note_1_will_be_withdrawn_to_validate_the_card_is_then_returned_to_your_wallet_balance_automatically">ملاحظة: سيتم سحب مبلغ 1 دولار للتأكد من صلاحية *-->
+    <!--البطاقة ومن ثم إعادة المبلغ إلى رصيد محفظتك بشكل تلقائي</string>-->
+
+    <string name="insert_coupon_number">أدخل رمز الكوبون</string>
+    <string name="coupon_number">رمز الكوبون</string>
+    <string name="bills">الفواتير</string>
+    <string name="bill">الفاتورة</string>
+
+    <string name="message">الرسالة</string>
+    <string name="subject">الموضوع</string>
+
+    <string name="select_subject">اختر الموضوع</string>
+    <string name="suggestion">الاقتراح</string>
+    <string name="have_suggestion">لديك اقتراح؟</string>
+    <string name="help_and_support">الدعم والمساندة</string>
+    <string name="faqs">الأسئلة المتكررة</string>
+    <string name="my_requests">طلباتي</string>
+    <string name="my_coupons">كوبوناتي</string>
+    <string name="settings">إعدادات</string>
+    <string name="have_another_problem">هل لديك مشكلة أخرى ؟</string>
+    <string name="add_new_ticket">فتح تذكرة جديدة ؟</string>
+    <string name="attach_attachment">إرفاق مستند</string>
+    <string name="request_date">تاريخ الطلب :</string>
+    <string name="request_number">رقم الطلب :</string>
+    <string name="request_status">حالةالطلب :</string>
+    <string name="add_reply">إضافة رد</string>
+    <string name="traceable">متاح تتبع الطلب</string>
+    <string name="not_traceable">لا يمكن تتبع الطلب</string>
+    <string name="not_found">لا يوجد</string>
+    <string name="nationality">الجنسية</string>
+    <string name="choose_time_type_full_time_part_time">اختر نوع الدوام (دوام كامل/دوام جزئي)</string>
+    <string name="part_time">دوام جزئي</string>
+    <string name="full_time">دوام كامل</string>
+    <string name="english_name_corresponding_to_national_id_or_passport">الاسم بالانجليزي (مطابق للهوية الوطنية أو جواز السفر)</string>
+    <string name="registered_number_in_stc_pay">STC Pay الرقم المسجل في</string>
+    <string name="conditions_for_accepting_registration">شروط قبول التسجيل</string>
+    <string name="i_agree_to_terms">أوافق على الشروط</string>
+    <string name="no_orders_currently">لا يوجد طلبات حاليا</string>
+    <string name="language">اللغة</string>
+    <string name="all_shops">جميع المتاجر</string>
+    <string name="we_are_ready_to_serve_you_on">جاهزين نخدمك🔥</string>
+    <string name="hello">حياك</string>
+    <string name="no_products_in_this_category">لا يوجد منتجات في هذه الفئة</string>
+    <string name="help_center">مركز المساعدة</string>
+    <string name="use_wallet_balance">الرصيد الحالي</string>
+    <string name="min_value">الحد الأدنى :</string>
+    <string name="max_value">الحد الاقصي :</string>
+    <string name="total_cost_should_be_grater_than">القيمة الإجمالية يجب انت تكون اكبر من </string>
+    <string name="total_cost_should_be_smaller_than">القيمة الإجمالية يجب انت تكون أصغر من </string>
+    <string name="balance">الرصيد</string>
+    <string name="i_advice_you_with">أنصحك ب</string>
+    <string name="in_mitrafast_app">في تطبيق مترا فاست</string>
+    <string name="card_was_added">تم إضافة البطاقة</string>
+    <string name="share_message">مشاركة رابط الصفحة على التطبيق</string>
+    <string name="share_restaurant">شارك المطعم</string>
+    <string name="mitra_is_your_fastest_way_to_deliver_orders">ميترا طريقك الأسرع لتوصيل الطلبات</string>
+    <string name="enter_phone_number">أدخل رقم الجوال</string>
+    <string name="please_check_your_internet_connection">رجاء تحقق من اتصال النت الخاص بك</string>
+    <string name="favorite_places">الأماكن المفضلة</string>
+    <string name="home">الرئيسية</string>
+    <string name="distance_">المسافة :</string>
+    <string name="enter_message">ادخل الرساله</string>
+    <string name="enter_your_mail">ادخل البريد الإلكتروني</string>
+    <string name="enter_your_name">ادخل الاسم</string>
+    <string name="my_account">حسابي</string>
+    <string name="add_card">إضافة البطاقة</string>
+    <string name="card_type">نوع البطاقة</string>
+    <string name="enter_card_number">ادخل رقم البطاقة</string>
+    <string name="send_code">تفعيل الحساب</string>
+    <string name="activation_code_has_been_sent_1">تم ارسال كود التفعيل لرقم جوال</string>
+    <string name="activation_code_has_been_sent_2">من فضلك ادخل كود التفعيل.</string>
+    <string name="delivery_time">وقت التوصيل :</string>
+    <string name="minute">دقيقه</string>
+    <string name="thanks_for_order_us">شكرا لطلبكم من ميترا فاست</string>
+    <string name="thanks_for_order_us_2">نرجو ان ننال اعجابكم وتقديركم</string>
+    <string name="chat">Chat</string>
+    <string name="company_name">الشركه التابع لها</string>
+    <string name="when_you_communicate_with_the_customer_through_any_other_applications_you_are_subject_to_legal_accountability">عند تواصلك مع العميل من خلال اي تطبيقات أخرى ستتعرض للمسائلة القانونية</string>
+    <string name="Rial">رس</string>
+    <string name="use_wallet">المحفظة</string>
+    <string name="orderNumber">رقم الطلب :</string>
+    <string name="favorite">المفضلة</string>
+    <string name="noFound">لا يوجد رصيد</string>
+    <string name="the_coupon_balance_has_been_added_to_the_wallet">تم إضافة رصيد الكوبون للمحفظة</string>
+    <string name="do_you_want_to_exit_for_agent">هل ترغب بتسجيل الخروج من تطبيق ميترا فاست لن تكون قادر على استلام طلبات الا بتسجيل الدخول مرة اخرى ؟</string>
+    <string name="no_discount">لا يوجد كوبون</string>
+    <string name="Attention">تنبيه!</string>
+    <string name="sorry">عفوا لا يمكن اختيار المحفظة لان رصيدك خالى</string>
+    <string name="order_offers">عروض الطلبات</string>
+    <string name="me">مكاني</string>
+    <string name="store">المتجر</string>
+    <string name="customer">العميل</string>
+    <string name="your_offer_has_been_sent_to_the_customer_you_will_receive_an_amount_from_the_customer">تم إرسال عرضك للعميل. سوف تستلم من العميل مبلغ</string>
+    <string name="please_wait_until_the_customer_accepts_your_offer_thank_you">برجاء الانتظار حتى يقوم العميل بقبول عرضك وشكرا</string>
+    <string name="waiting_for_the_customer">بانتظار العميل</string>
+    <string name="cancel_offer">إلغاء العرض</string>
+    <string name="you_will_receive_from_the_customer">سوف تأخذ من العميل</string>
+    <string name="value_number">رقم القيمة المضافة</string>
+    <string name="isBusy">عفوا المحل مشغول الان عن استقبال الطلبات</string>
+    <string name="description">الوصف</string>
+    <string name="discount">الخصم</string>
+    <string name="count">العدد :</string>
+    <string name="ClientAddress">عنوان العميل :</string>
+    <string name="ShopAddress">عنوان المتجر :</string>
+    <string name="end_date">تاريخ الانتهاء :</string>
+    <string name="name_">الاسم :</string>
+    <string name="report">تقرير</string>
+    <string name="Reporting_request">الابلاغ عن الطلب</string>
+    <string name="enter_your_message_here"><font size="13">ادخل رسالتك…</font></string>
+    <string name="phone">رقم الجوال :</string>
+    <string name="are_you_sure_you_want_to_delete_this_card">هل انت متاكد من حذف هذا الكارت</string>
+    <string name="validation_failed">يجب ان تكون القيمه اكبر من 1 ريال سعودي</string>
+    <string name="youDontHava">ليس لديك اي بطاقات حالية</string>
+    <string name="cancelation_reason">سبب الالغاء</string>
+    <string name="errorNumber">يجب ان يكون الرقم مكون من 16 رقم.</string>
+    <string name="vaildMonth">شهر غير صحيصح</string>
+    <string name="vaildYear">سنه غير صحيحة</string>
+    <string name="errorDate">تاريخ غير صحيح</string>
+    <string name="no_any_products">"ليس لديك اي كوبونات"</string>
+    <string name="type_ticket">نوع التذكره :</string>
+    <string name="not">ليس عليك اى مستحقات بالوقت الحالى</string>
+    <string name="no_products">لم تقم بإضافة منتجات في السلة</string>
+    <string name="nameBank">اسم البنك </string>
+    <string name="no_map_ap">يجب ان يكون لديك تطبيق خرائط</string>
+    <string name="tap_tittle">عزيزي العميل</string>
+    <string name="tap_text_message">"يجب عليك سحب الحاله الي اليمين عند الانتهاء من الحاله الحالية \n\n\n\n  ميترا فاست تتمني لكم السلامة"</string>
+
+
+</resources>

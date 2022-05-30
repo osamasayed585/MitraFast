@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MVVM.Agent.FinancialMovements.FinancialMovementsActivity">
+
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/financial_movement"
+            style="@style/item_title" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:onClick="onBackClick"
+            android:src="@drawable/back_button" />
+    </FrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/financial_movements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/medium_dp"
+        android:layout_marginTop="@dimen/large_dp"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/ll_fees_container"
+        app:layout_constraintTop_toBottomOf="@id/action_bar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/list_item_financial_movement" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_fees_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="#DDDDDD"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/neosanssrabicmedium"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/medium_dp"
+            android:paddingVertical="@dimen/small_dp"
+            android:text="@string/your_commission"
+            android:textSize="@dimen/tx_medium" />
+
+        <TextView
+            android:id="@+id/total_commission"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textColor="@color/black"
+            tools:text="19.2 ريال" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:gravity="center"
+        android:text="@string/you_can_pay_commission_via_credit_and_debit_cards_click_on_the_button_below_to_complete_the_payment_process"
+        app:layout_constraintBottom_toTopOf="@+id/commission_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/commission_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_weight="3"
+        android:background="@drawable/rounded_orange_solid"
+        android:text="@string/click_to_pay_commission"
+        android:textSize="@dimen/tx_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

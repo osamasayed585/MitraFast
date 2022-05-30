@@ -1,0 +1,475 @@
+<resources>
+    <string name="app_name">Mitra Fast</string>
+
+    <string name="default_notification_channel_id" translatable="false">MitraFast_1</string>
+    <string name="dynamic_links_uri_prefix" translatable="false">https://mitrafast.page.link</string>
+    <!--General Strings-->
+    <string name="errorRequired">Required</string>
+    <string name="error_validation_code_message">Validation code should be 4 numbers</string>
+    <string name="errorWrongPhoneNumberMessage">Phone number should be at least</string>
+    <string name="errorPasswordMatchingMessage">Password not matched</string>
+    <string name="errorInvalidEmail">Invalid email</string>
+    <string name="errorWrongStartPhoneNumberMessage">Phone number should start with</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="next">Next</string>
+    <string name="skip">skip</string>
+    <string name="save">Save</string>
+    <string name="login_first_message">Login first</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="iban_number_should_be_22_digit">Iban number should be 22 digit</string>
+
+    <!--    LocationUpdatesService-->
+    <string name="working">Working</string>
+    <string name="locationUpdateMessage">Location updates category is running</string>
+    <string name="permissionMessage">Allow permissions</string>
+    <string name="available">Available</string>
+
+
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="main">Home</string>
+    <string name="login">Login</string>
+    <string name="profile">Profile</string>
+    <string name="wallet">Wallet</string>
+    <string name="cart">Cart</string>
+    <string name="my_orders">My Orders</string>
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact us</string>
+    <string name="faq">FAQ</string>
+    <string name="saved_locations">Saved locations</string>
+
+
+    <string name="distance">Distance</string>
+    <string name="name">Name :</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="address">Address :</string>
+    <string name="order_status">Order State</string>
+    <string name="all_previous_orders">All previous orders</string>
+    <string name="write_your_message">Write your message</string>
+    <string name="sareei_is">What is sariee</string>
+    <string name="send">Send</string>
+    <string name="register_as_provider">Register as provider</string>
+
+    <string name="bill_details">Bill details</string>
+    <string name="collection_price">Collection price :</string>
+    <string name="total">Total :</string>
+    <string name="notes_for_restaurant">Notes for restaurant ?</string>
+    <string name="apply">Apply</string>
+    <string name="add_coupon">Add Coupon</string>
+    <string name="arriving_time">Arriving Time</string>
+    <string name="price_delivery">Delivery price</string>
+    <string name="refuse">Refuse</string>
+    <string name="accept">Accept</string>
+
+
+    <!--    LoginActivity-->
+
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="click_to_attach_pic">Click to attach the pictures</string>
+    <string name="attach_identity_pic">Attach ID photo</string>
+    <string name="car_info">2 - Vehicle information</string>
+    <string name="account_owner_name">Account owner name</string>
+    <string name="bank_type">Bank type</string>
+    <string name="choose_bank">Choose the bank from the list</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="verification">Verification</string>
+    <string name="please_enter_the_activation_code_sent_to_your_mobile_phone">Please enter the activation code sent to your mobile phone</string>
+    <string name="dd_image">Add a picture</string>
+    <string name="personal_information">Personal information</string>
+    <string name="identity_num">ID Number</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="attach_licence_pic">Attach driving license</string>
+    <string name="iban_num">IBAN number</string>
+    <string name="membership_num">Membership No :</string>
+    <string name="data_panel">Details panel</string>
+    <string name="canceled_orders">Canceled orders</string>
+    <string name="pending_orders">Pending orders</string>
+    <string name="all_orders">All orders</string>
+    <string name="activate">Enable</string>
+    <string name="all_orders_list">All list of new orders</string>
+    <string name="notifications">Notifications</string>
+    <string name="completed_orders">Completed orders</string>
+    <string name="last_order_state">Last order\'s state</string>
+    <string name="ready_to_receive">ready to receive ypur order</string>
+    <string name="disable">Disable</string>
+    <string name="order_number">Order no.</string>
+    <string name="client_order_details">Order details</string>
+    <string name="click_go">Get directions</string>
+    <string name="contact_with_client">Contact the client</string>
+    <string name="deliver_cost">Deliver cost :</string>
+    <string name="order_delivered">Order deliverd</string>
+    <string name="submit_your_order">Submit your order</string>
+    <string name="the_name_that_appears_to_the_customer">The name that appears to the customer</string>
+    <string name="name_on_id">Name on ID</string>
+    <string name="email">Email</string>
+    <string name="order_details">Order details</string>
+    <string name="ignore">Ignore</string>
+    <string name="financial_movement">Financial movement</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="bank_account">Bank Account</string>
+    <string name="total_purchases">Total purchases :</string>
+    <string name="sareei_commission">Sareei commission :</string>
+    <string name="payment_method">Payment method</string>
+    <string name="order_date">Order date :</string>
+    <string name="finance_side">Finance side</string>
+    <string name="delete">Delete</string>
+    <string name="ticketNo">Ticket no.</string>
+    <string name="ticket_type">Ticket type</string>
+    <string name="ticketState">Ticket state</string>
+
+    <!--    ProfileActivity-->
+
+    <!--    MessageDialog-->
+    <string name="the_message_has_been_sent_we_will_contact_you_soon_via_mail">The message has been sent. We will contact you soon via mail</string>
+    <string name="main_page">Main page</string>
+    <string name="continue_process">Continue process</string>
+
+    <!--    ProviderRegisterActivity-->
+    <string name="send_register_request">Send register request</string>
+
+    <!--    ShopRegisterActivity-->
+    <string name="select_location">Select location</string>
+    <string name="store_mobile_number">Store mobile number</string>
+    <string name="owner_mobile_number">Owner mobile number</string>
+    <string name="commercial_registration_number">Commercial registration number</string>
+    <string name="store_name_en">Store name (English)</string>
+    <string name="store_name_ar">Store name (Arabic)</string>
+    <string name="work_times">Work times</string>
+    <string name="select_start_work_time">Select start work time</string>
+    <string name="select_end_work_time">Select end work time</string>
+    <string name="select_start_work_time_first">Select start work time first</string>
+
+
+    <!--    ActivateAccountActivity-->
+    <string name="resend_code"><u>Resend code</u></string>
+    <string name="remaining">Remaining:</string>
+    <string name="for_resend">For resending activation code</string>
+
+    <!--    RegisterActivity-->
+    <string name="select_profile_image">Select profile image</string>
+
+    <!--    PickLocationActivity-->
+
+    <!--    ActivateAccountActivity-->
+
+
+    <!--    RegisterActivity-->
+    <string name="profile_image_message">You Should Pick Profile Image</string>
+    <string name="identity_image_message">You Should Pick Identity Image</string>
+    <string name="driving_license_image_message">You Should Pick Driving License Image</string>
+    <string name="car_insurance_image_message">You Should Pick Car Insurance Image</string>
+    <string name="attach_a_copy_of_the_driving_licenses_the_form">Attach a copy of the driving licenses (the form)</string>
+
+    <!--    AgentMainActivity-->
+    <string name="membership_number">Membership number</string>
+    <string name="finished_orders">Finished orders</string>
+    <string name="log_out">Log out</string>
+    <string name="not_approved_yet">Awaiting administration approval</string>
+
+    <!--    AddTicketActivity-->
+    <string name="attach_image">Attach image</string>
+    <string name="select_ticket_type">Select ticket type</string>
+    <string name="select_ticket_images">Select ticket images</string>
+
+    <!--    ContactUsActivity-->
+    <string name="open_new_ticket">Open new ticket</string>
+
+    <!--    ShopsAdapter-->
+    <string name="open_now">Open now</string>
+    <string name="closed_now">Closed now</string>
+
+    <!--    NewOrdersAdapter-->
+
+    <!--    AgentOrderDetailsActivity-->
+    <string name="client_location">Client location</string>
+    <string name="agent_waiting_message">Waiting for client response for your offer</string>
+
+    <!--    DeleteOrderDialogAdapter-->
+    <string name="select_cancel_order_reason">select cancel order reason</string>
+
+    <!--    ConfirmDialog-->
+    <string name="confirm_order_delivery">Confirm order delivery</string>
+
+
+    <!--    RateClientActivity-->
+    <string name="order_has_been_delivered_successfully">Order has been delivered successfully</string>
+    <string name="rate_client">Rate client</string>
+
+
+    <!--    RateAgentActivity-->
+    <string name="rate_agent">Rate agent</string>
+
+    <!--    ProductDetailsActivity-->
+    <string name="type">Type</string>
+    <string name="size">Size</string>
+    <string name="extras">Extras</string>
+    <string name="choices">Choices</string>
+    <string name="add_to_cart">Add to cart</string>
+
+    <!--    ProductDetailsActivity-->
+    <string name="this_product_is_from_another_merchant">This product is from another merchant, Do you want to delete all cart products to add this product?</string>
+
+    <!--    CartActivity-->
+    <string name="select_payment_method">Select payment method</string>
+    <string name="select_delivery_location">Select delivery location</string>
+    <string name="are_you_sure_you_want_to_delete_this_product">Are you sure you want to delete this product ?</string>
+    <string name="discount_rate">Discount rate</string>
+    <string name="discount_on_delivery_cost">Discount on delivery cost</string>
+
+
+    <!--    FavoritePlacesActivity-->
+    <string name="add_location">Add Location</string>
+    <string name="no_addresses">No Address</string>
+    <string name="choose_a_delivery_location_or_add_a_new_location">Choose a delivery location or add a new location</string>
+
+    <!--    PickLocationDataActivity-->
+    <string name="location_address">Location address</string>
+    <string name="complete_data">Complete Data</string>
+    <string name="location_name">Location name</string>
+
+    <!--    FavoritePlacesAdapter-->
+    <string name="delete_from_addresses">Are you sure you want to delete from addresses?</string>
+
+
+    <!--    LocatingActivity-->
+    <string name="cancel_order">Cancel order</string>
+    <string name="client_waiting_message">Searching for the nearest representative to you, thank you for your request from SARIE</string>
+
+
+    <!--    ClientOrderDetailsActivity-->
+    <string name="order_was_listed_successfully">Order was listed successfully</string>
+    <string name="your_request_is_in_progress">Your request is in progress</string>
+    <string name="your_request_with_agent">Your request with agent</string>
+    <string name="agent_has_arrived">Agent has arrived</string>
+    <string name="contact_with_agent">Contact with agent</string>
+    <string name="order_number_label">Order number :</string>
+    <string name="client_order_details_label">Order details :</string>
+
+    <!--    InProgressOrderActivity-->
+    <string name="change_order_status">Change order status</string>
+
+    <!--    OrderStatusDialog-->
+    <string name="choose_one_of_these_statuses">Choose one of these statuses</string>
+    <string name="you_should_select_statuses_in_order">You should select statuses in order</string>
+    <string name="order_note">Order note</string>
+
+    <!--    FinancialMovementsActivity-->
+    <string name="click_to_pay_commission">Click to pay commission</string>
+    <string name="you_can_pay_commission_via_credit_and_debit_cards_click_on_the_button_below_to_complete_the_payment_process">You can pay commission via credit and debit cards. Click on the button below to complete the payment process</string>
+    <string name="your_commission">Your commission</string>
+
+    <!--    PaymentStatusActivity-->
+    <string name="payment_succeeded">Payment succeeded</string>
+    <string name="payment_failed">Payment failed</string>
+
+    <!--    ShopDetailsActivity-->
+    <string name="all">All</string>
+    <string name="search_for_product">Search for Product…</string>
+
+    <!--    OrdersActivity-->
+    <string name="orders">Orders</string>
+    <string name="track_order">Track order</string>
+    <string name="cart_is_empty">Cart is empty</string>
+
+
+    <!--    ClientMainActivity-->
+    <string name="exit_from_mitra_fast">Exit From Mitra fast</string>
+    <string name="do_you_want_to_exit">Do you want to Exit?</string>
+    <string name="exit_btn">Exit</string>
+    <string name="discard_btn">Discard</string>
+
+
+    <!--    LoginTypeActivity-->
+
+    <!--    EditBankAccountActivity-->
+    <string name="edit">Edit</string>
+
+
+    <!--    ShopsActivity-->
+
+    <!--    ProductDetailsActivity-->
+    <string name="minimum_extras_count_is">minimum extras count is</string>
+    <string name="and_maximum">and maximum</string>
+    <string name="minimum_choices_count_is">minimum choices count is</string>
+
+
+    <!--    ChangeForgottenPasswordActivity-->
+
+
+    <string name="delivery_cost">Delivery cost:</string>
+    <string name="best_seller">Best seller</string>
+    <string name="offers">Offers</string>
+    <string name="others">Others</string>
+    <string name="delivery_to">Delivery to</string>
+    <string name="search_for_your_meal_or_drink">Search for your meal or drink</string>
+    <string name="search_for_restaurants_and_cafes">Search for restaurants and cafes</string>
+    <string name="delivery">Delivery</string>
+    <string name="notices">Notices</string>
+    <string name="insert_notices">Insert notices</string>
+    <string name="orders_total">Orders total</string>
+    <string name="continue_order">Continue order</string>
+    <string name="mitra_fast_app_captain">Mitra fast app captain</string>
+    <string name="edit_number">Edit number</string>
+    <string name="agree_on">Agree on</string>
+    <string name="agree_on_terms_and_conditions">Agree on terms and conditions</string>
+    <string name="agree">Agree</string>
+    <string name="add_balance">Add balance</string>
+    <string name="operations">operations</string>
+    <string name="add_date">Add date</string>
+    <string name="value">Value</string>
+    <string name="payment_methods">Payment methods</string>
+    <string name="add_new_card">Add new card</string>
+    <string name="add">Add</string>
+    <string name="insert_charge_amount">Insert charge amount</string>
+    <string name="insert_amount"><font size="12">Balance to be shipped</font></string>
+    <string name="card_number">Card number</string>
+    <string name="expiry_date">Expiry date</string>
+    <string name="cvv">CVV</string>
+    <string name="note">Note:</string>
+    <string name="note_1_will_be_withdrawn_to_validate_the_card_is_then_returned_to_your_wallet_balance_automatically">Note: $1 will be withdrawn to validate * The card is then returned to your wallet balance automatically</string>
+    <!--    <string name="note_1_will_be_withdrawn_to_validate_the_card_is_then_returned_to_your_wallet_balance_automatically" ><![CDATA[<b><font color=#3BA9FF>Note:</font></b><br> $1 will be withdrawn to validate * The card is then returned to your wallet balance automatically]]> </string>-->
+    <string name="insert_coupon_number">Insert coupon number</string>
+    <string name="coupon_number">Coupon number</string>
+    <string name="bills">Bills</string>
+    <string name="bill">Bill</string>
+    <string name="vat_identification_no_ar" translatable="false">رقم التعريف الضريبي \n VAT Identification No.</string>
+    <string name="vat_identification_no_en" translatable="false">VAT Identification No.</string>
+    <string name="invoice_number_ar_en" translatable="false">رقم الفاتورة\nInvoice No.</string>
+    <string name="invoice_date_ar_en" translatable="false">تاريخ الفاتورة\nInvoice Date.</string>
+
+    <string name="delivery_fees_ar_en" translatable="false">رسوم التوصيل\nDelivery Fees.</string>
+    <string name="sub_total_vat_included_ar_en" translatable="false">الإجمالي شامل الضريبة\nSub Total VAT Included.</string>
+    <string name="vat_ar_en" translatable="false">معدل ضريبة القيمة المضافة\nVAT.</string>
+    <string name="vat_amount_ar_en" translatable="false">مبلغ الضريبة المضافة\nVAT Amount.</string>
+    <string name="message">Message</string>
+    <string name="subject">Subject</string>
+    <string name="select_subject">Select subject</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="have_suggestion">Have suggestion ?</string>
+    <string name="help_and_support">Help and support</string>
+    <string name="faqs">FAQs</string>
+    <string name="my_requests">My requests</string>
+    <string name="my_coupons">My coupons</string>
+    <string name="settings">Settings</string>
+    <string name="have_another_problem">Have another problem ?</string>
+    <string name="add_new_ticket">Add new ticket</string>
+    <string name="attach_attachment">Attach attachment</string>
+    <string name="request_date">Request date :</string>
+    <string name="request_number">Request number :</string>
+    <string name="request_status">Request status</string>
+    <string name="add_reply">Add reply</string>
+    <string name="traceable">Traceable</string>
+    <string name="not_traceable">Not traceable</string>
+    <string name="not_found">Not found</string>
+    <string name="nationality">Nationality</string>
+    <string name="choose_time_type_full_time_part_time">Choose time type (full time / part time)</string>
+    <string name="part_time">Part time</string>
+    <string name="full_time">Full time</string>
+    <string name="english_name_corresponding_to_national_id_or_passport">English name (corresponding to national ID or passport)</string>
+    <string name="registered_number_in_stc_pay">Registered number in STC Pay</string>
+    <string name="conditions_for_accepting_registration">Accepting registration conditions</string>
+    <string name="i_agree_to_terms">I agree to terms</string>
+    <string name="no_orders_currently">No orders currently</string>
+    <string name="language">Language</string>
+    <string name="all_shops">All shops</string>
+    <string name="we_are_ready_to_serve_you_on">We are ready to serve you on 🔥</string>
+    <string name="hello">Hello</string>
+    <string name="no_products_in_this_category">No products in this category</string>
+    <string name="help_center">Help center</string>
+    <string name="use_wallet_balance">Use wallet balance</string>
+    <string name="min_value">Min value</string>
+    <string name="max_value">Max value</string>
+    <string name="total_cost_should_be_grater_than">Total Cost should be grater than</string>
+    <string name="total_cost_should_be_smaller_than">Total Cost should be smaller than</string>
+    <string name="balance">Balance</string>
+    <string name="i_advice_you_with">I advise you with</string>
+    <string name="in_mitrafast_app">in Mitrafast App</string>
+    <string name="card_was_added">Card was added</string>
+    <string name="share_message">Like our page on social media</string>
+    <string name="share_restaurant">Share the restaurant</string>
+    <string name="mitra_is_your_fastest_way_to_deliver_orders">Mitra is your fastest way to deliver orders</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection</string>
+    <string name="favorite_places">Favorite places</string>
+    <string name="home">Home</string>
+    <string name="distance_">Distance :</string>
+    <string name="enter_message">Enter a message</string>
+    <string name="enter_your_mail">Enter your email</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="my_account">My account</string>
+    <string name="add_card">Add Card</string>
+    <string name="card_type">Card Type</string>
+    <string name="enter_card_number">Enter card number</string>
+    <string name="send_code">Activate the account</string>
+    <string name="activation_code_has_been_sent_1">An activation code has been sent to a mobile number</string>
+    <string name="activation_code_has_been_sent_2">, Please enter the activation code</string>
+    <string name="delivery_time">Delivery time</string>
+    <string name="minute">Minute</string>
+    <string name="thanks_for_order_us">Thank you for asking Mirta fast.</string>
+    <string name="thanks_for_order_us_2">We hope to gain your admiration and appreciation.</string>
+    <string name="chat">Chat</string>
+    <string name="company_name">affiliated company</string>
+    <string name="when_you_communicate_with_the_customer_through_any_other_applications_you_are_subject_to_legal_accountability">When you communicate with the customer through any other applications, you are subject to legal accountability</string>
+    <string name="Rial">Rial</string>
+    <string name="use_wallet">Wallet</string>
+    <string name="orderNumber">order number :</string>
+    <string name="favorite">Favorites</string>
+    <string name="no_discount">There are no discounts</string>
+    <string name="noFound">Not found</string>
+    <string name="the_coupon_balance_has_been_added_to_the_wallet">The coupon balance has been added to the wallet</string>
+    <string name="do_you_want_to_exit_for_agent">Do you want to log out of the Mitrafast application? You will not be able to receive requests unless you log in again?</string>
+    <string name="Attention">Attention!</string>
+    <string name="sorry">Sorry, it is not possible to choose the wallet because your balance is empty</string>
+    <string name="order_offers">Order offers</string>
+    <string name="me">Me</string>
+    <string name="store">Store</string>
+    <string name="customer">Customer</string>
+    <string name="your_offer_has_been_sent_to_the_customer_you_will_receive_an_amount_from_the_customer">Your offer has been sent to the customer. You will receive an amount from the customer</string>
+    <string name="please_wait_until_the_customer_accepts_your_offer_thank_you">Please wait until the customer accepts your offer. Thank you</string>
+    <string name="waiting_for_the_customer">Waiting for the customer</string>
+    <string name="cancel_offer">Cancel offer</string>
+    <string name="you_will_receive_from_the_customer">You will receive from the customer</string>
+    <string name="value_number">Value-added number</string>
+    <string name="isBusy">Sorry, the shop is busy right now</string>
+    <string name="description">Description</string>
+    <string name="discount">Discount</string>
+    <string name="count">Count</string>
+    <string name="ClientAddress">Client address</string>
+    <string name="ShopAddress">Shop Address</string>
+    <string name="tax_invoice">Tax Invoice</string>
+    <string name="wallet_balance">رصيد المحفظة</string>
+    <string name="order_status_">حالة الطلب :</string>
+    <string name="ncoupon_discount_percentage">نسبة خصم الكوبون\nCoupon discount percentage</string>
+    <string name="ncoupon_discount_value">قيمة خصم الكوبون\nCoupon discount value</string>
+    <string name="report">Report</string>
+    <string name="enter_your_message_here">Enter your message here</string>
+    <string name="phone">Phone :</string>
+    <string name="end_date">End date</string>
+    <string name="name_">Name :</string>
+    <string name="Reporting_request">Reporting on request</string>
+    <string name="are_you_sure_you_want_to_delete_this_card">Are you sure you want to delete this card</string>
+    <string name="validation_failed">Amount must be greater than 99</string>
+    <string name="youDontHava">You don\'t have any current cards.</string>
+    <string name="cancelation_reason">Cancelation reason</string>
+    <string name="errorNumber">The number should be made up of 16 numbers.</string>
+    <string name="vaildMonth">Incorrect month</string>
+    <string name="vaildYear">Incorrect year</string>
+    <string name="errorDate">Incorrect date</string>
+    <string name="no_any_products">"You don't have any coupons."</string>
+    <string name="type_ticket">Type ticket :</string>
+    <string name="not">text</string>
+    <string name="no_products">a</string>
+    <string name="nameBank">Name bank</string>
+    <string name="no_map_ap">You should have a map app.</string>
+    <string name="tap_tittle">Dear Customer</string>
+    <string name="tap_text_message">"this is a swipe "</string>
+
+
+</resources>

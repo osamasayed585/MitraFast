@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.linkpcom.mitrafast">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".Classes.Others.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/main_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/main_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MVVM.Client.ChargeBalance.ChargeBalanceActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "app://sample/profile” -->
+                <data
+                    android:host="speedapp"
+                    android:pathPrefix="/makeWalletCharge"
+                    android:scheme="app" />
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name=".MVVM.Agent.notifications.AgentNotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MVVM.Client.Notification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MVVM.Client.FavoriteShops.FavoriteShopsActivity"
+            android:exported="false" />
+        <activity android:name=".MVVM.Common.Language.LanguageActivity" />
+        <activity android:name=".MVVM.Client.Settings.SettingsActivity" />
+        <activity android:name=".MVVM.Client.Tracking.TrackingActivity" />
+        <activity android:name=".MVVM.Client.SupportQuestions.SupportQuestionsActivity" />
+        <activity android:name=".MVVM.Client.Support1.Support1Activity" />
+        <activity android:name=".MVVM.Client.AddTicket.AddTicketActivity" />
+        <activity android:name=".MVVM.Client.AllShops.AllShopsActivity" />
+        <activity android:name=".MVVM.Client.AddTicketReply.AddTicketReplyActivity" />
+        <activity android:name=".MVVM.Client.Tickets.TicketsActivity" />
+        <activity android:name=".MVVM.Client.Support2.Support2Activity" />
+        <activity android:name=".MVVM.Client.Support3.Support3Activity" />
+        <activity android:name=".MVVM.Client.Offers.OffersActivity" />
+        <activity android:name=".MVVM.Client.Coupons.CouponsActivity" />
+        <activity android:name=".MVVM.Common.VerifyForgotPasswordCode.VerifyForgotPasswordCodeActivity" />
+        <activity android:name=".MVVM.Common.ChangeForgottenPassword.ChangeForgottenPasswordActivity" />
+        <activity android:name=".MVVM.Common.ActivateAccount.ActivateAccountActivity" />
+        <activity android:name=".MVVM.Common.FAQ.FAQActivity" />
+        <activity android:name=".MVVM.Common.Intro.IntroActivity" />
+        <activity android:name=".MVVM.Chat.ChatActivity" />
+        <activity
+            android:name=".MVVM.Common.SplashScreen.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MVVM.Client.Cart.CartActivity" />
+        <activity android:name=".MVVM.Client.ContactUs.ContactUsActivity" />
+        <activity android:name=".MVVM.Client.FavoritePlaces.FavoritePlacesActivity" />
+        <activity android:name=".MVVM.Client.Locating.LocatingActivity" />
+        <activity android:name=".MVVM.Common.Login.LoginActivity" />
+        <activity android:name=".MVVM.Client.Main.MainActivity" />
+        <activity android:name=".MVVM.Client.OrderDetails.OrderDetailsActivity" />
+        <activity android:name=".MVVM.Client.Orders.OrdersActivity" />
+        <activity android:name=".MVVM.Client.OrderSuccessfullyListed.OrderSuccessfullyListedActivity" />
+        <activity android:name=".MVVM.Client.SearchShops.SearchShopsActivity" />
+        <activity android:name=".MVVM.Client.PaymentMethods.PaymentMethodsActivity" />
+        <activity android:name=".MVVM.Client.PaymentCards.PaymentCardsActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "app://sample/profile” -->
+                <data
+                    android:host="mitrafast"
+                    android:pathPrefix="/checkCredit"
+                    android:scheme="app" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".MVVM.Client.PickLocationData.PickLocationDataActivity" />
+        <activity android:name=".MVVM.Client.BillDetails.BillDetailsActivity" />
+        <activity android:name=".MVVM.Client.Bills.BillsActivity" />
+        <activity android:name=".MVVM.Client.Suggest.SuggestActivity" />
+        <activity android:name=".MVVM.Client.PickLocationMap.PickLocationMapActivity" />
+        <activity android:name=".MVVM.Client.AddPaymentCard.AddPaymentCardActivity" />
+        <activity android:name=".MVVM.Client.Profile.ProfileActivity" />
+        <activity android:name=".MVVM.Client.CompleteData.CompleteDataActivity" />
+        <activity android:name=".MVVM.Client.AboutUs.AboutUsActivity" />
+        <activity android:name=".MVVM.Client.RateAgent.RateAgentActivity" />
+        <activity android:name=".MVVM.Client.ProductDetails.ProductDetailsActivity" />
+        <activity
+            android:name=".MVVM.Client.DynamicLink.DynamicLinkActivity"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mitrafast.page.link"
+                    android:scheme="https"
+
+                    />
+                <data
+                    android:host="vtapps.page.link"
+                    android:scheme="https"
+
+                    />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".MVVM.Client.ShopDetails.ShopDetailsActivity" />
+        <activity android:name=".MVVM.Client.Shops.ShopsActivity" />
+        <activity android:name=".MVVM.Client.Wallet.WalletActivity" />
+        <activity android:name=".MVVM.Client.PickLocation.PickLocationActivity" />
+        <activity
+            android:name=".MVVM.Client.PaymentStatus.PaymentStatusActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "app://sample/profile” -->
+                <data
+                    android:host="mitrafast"
+                    android:pathPrefix="/makeOrder"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MVVM.Agent.AddTicket.AddTicketActivity" />
+        <activity android:name=".MVVM.Agent.BankAccount.BankAccountActivity" />
+        <activity android:name=".MVVM.Agent.ContactUs.ContactUsActivity" />
+        <activity android:name=".MVVM.Agent.FinancialMovements.FinancialMovementsActivity" />
+        <activity
+            android:name=".MVVM.Agent.PaymentStatus.PaymentStatusActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Accepts URIs that begin with "app://sample/profile” -->
+                <data
+                    android:host="mitrafast"
+                    android:pathPrefix="/financialMovement"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MVVM.Agent.FinishedOrders.FinishedOrdersActivity" />
+        <activity android:name=".MVVM.Agent.InProgressOrder.InProgressOrderActivity" />
+        <activity android:name=".MVVM.Agent.Main.MainActivity" />
+        <activity android:name=".MVVM.Agent.OrderDetails.OrderDetailsActivity" />
+        <activity android:name=".MVVM.Agent.Orders.OrdersActivity" />
+        <activity android:name=".MVVM.Agent.Profile.ProfileActivity" />
+        <activity android:name=".MVVM.Agent.RateClient.RateClientActivity" />
+        <activity android:name=".MVVM.Agent.Register.RegisterActivity" />
+        <activity android:name=".MVVM.Agent.TermsAndConditions.TermsAndConditionsActivity" />
+        <activity android:name=".MVVM.Agent.AddBankAccount.AddBankAccountActivity" />
+        <activity android:name=".MVVM.Shop.PickLocation.PickLocationActivity" />
+        <activity android:name=".MVVM.Shop.ShopRegister.ShopRegisterActivity" /> <!-- Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- FireBase -->
+        <service
+            android:name=".Classes.Services.FirebaseMessaging"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_mobile_notifications" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" /> <!-- LocationUpdatesService -->
+        <service
+            android:name=".Classes.Services.LocationUpdatesService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="location" />
+    </application>
+
+</manifest>

@@ -1,0 +1,208 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.gms.google-services'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdk 31
+
+
+    defaultConfig {
+        applicationId "com.linkpcom.mitrafast"
+        minSdk 21
+        targetSdk 31
+        versionCode 3
+        versionName "1.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+dependencies {
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation project(path: ':Chat')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //Legacy Support
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    // Hilt
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    annotationProcessor "com.google.dagger:hilt-compiler:2.38.1"
+    annotationProcessor 'androidx.hilt:hilt-compiler:1.0.0'
+
+    //Navigation
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    //Recyclerview
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    //CardView library
+    implementation "androidx.cardview:cardview:1.0.0"
+    //CircleImageView Library
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //Picasso Library
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Material Design library
+    implementation 'com.google.android.material:material:1.6.0-alpha02'
+    //Retrofit Library
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    //GSON Library
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //okHttp
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+    implementation 'com.jakewharton.retrofit:retrofit1-okhttp3-client:1.0.2'
+    //interceptor
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    //RxJava Library
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    //location
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+
+    //Timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //Lombok Library
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    //utilcode
+    implementation 'com.blankj:utilcode:1.22.0'
+
+    //ProgressBars
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'net.bohush.geometricprogressview:geometricprogressview:1.1.1'
+    implementation 'com.steelkiwi:sliding-square-loader-view:1.0.0'
+
+    //Image Compressor
+//    implementation 'id.zelory:compressor:2.1.0'
+
+    //Dexter For Dynamic Permissions
+    implementation 'com.karumi:dexter:6.0.0'
+
+    //WheelView
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.3'
+
+    //FireBase
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-dynamic-links'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.firebase:geofire-java:2.3.1'
+
+    //Imagepicker
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:2.0.0'
+    implementation 'com.github.esafirm.android-image-picker:rximagepicker:2.0.0'
+
+    //Chat Date Formatter
+    implementation 'com.github.curioustechizen.android-ago:library:1.4.0'
+
+    //Chat Layout
+    implementation 'com.github.stfalcon:chatkit:0.3.3'
+
+    //CircleIndicator
+    implementation 'me.relex:circleindicator:2.1.4'
+
+
+    //Image Zoom Popup Library
+    implementation 'com.github.chathuralakmal:AndroidImagePopup:1.2.2'
+
+
+    //ToggleButton
+    implementation 'com.github.angads25:toggle:1.1.0'
+
+
+    //RTL ViewPager
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'com.duolingo.open:rtl-viewpager:2.0.0'
+
+
+    //Alerter instead Toast
+    implementation 'com.tapadoo.android:alerter:4.0.0'
+
+
+    //PhotoView For Zooming Images
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+
+    //GIF View
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
+
+    //Directions
+//    implementation 'com.github.jd-alexander:library:1.1.0'
+
+    //Time Picker
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+
+//    custom shapes
+    implementation 'com.github.florent37:shapeofview:1.0.4'
+
+
+//    rating bar
+    implementation 'com.hedgehog.ratingbar:app:1.1.2'
+
+    //room
+    implementation 'androidx.room:room-runtime:2.4.1'
+    annotationProcessor 'androidx.room:room-compiler:2.4.1'
+    implementation 'androidx.room:room-rxjava2:2.4.1'
+
+    //Dashed Lines Library
+    implementation 'com.xfinity:dahdit:0.9.3'
+
+    //Exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.16.1'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+
+//    OTP edit text
+    implementation 'com.github.darshan-miskin:PinView-Android:v1.1.8'
+
+
+    //CurvedBottomNavigation
+    implementation 'np.com.susanthapa:curved_bottom_navigation:0.6.5'
+
+    // https://github.com/tsuryo/Swipeable-RecyclerView
+    implementation 'com.github.tsuryo:Swipeable-RecyclerView:1.1'
+
+    //  Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // TapTargetView for Android  raywenderlich.com/5194-taptargetview-for-android-tutorial
+    implementation 'uk.co.samuelwall:material-tap-target-prompt:3.3.2'
+}
+

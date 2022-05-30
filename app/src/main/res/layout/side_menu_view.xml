@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    tools:showIn="@layout/activity_client_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:elevation="0dp"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/white"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="@dimen/medium_dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/top" />
+
+
+                <ImageView
+                    android:id="@+id/btn_close"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_menu_close"
+                    app:layout_constraintBottom_toBottomOf="@+id/view2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/header_user_image"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="@dimen/XLarge_dp"
+                    android:src="@drawable/logo_holder"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/header_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neosansarabic"
+                    android:padding="@dimen/small_dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/medium_dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/btn_arabic"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/arabic_language_button_parallelogram"
+                    android:gravity="center"
+                    android:text="@string/arabic"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/btn_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.5"
+                    android:background="@drawable/english_language_button_parallelogram"
+                    android:gravity="center"
+                    android:text="@string/english"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/ic_main_inactive_orange" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/main"
+                                android:textSize="@dimen/tx_small_12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/saved_locations"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/ic_bookmark" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/saved_locations"
+                                android:textSize="@dimen/tx_small_12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/shopping_cart_orange" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/cart"
+                                android:textSize="@dimen/tx_small_12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/favorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/ic_favorites_orange" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/favorite"
+                                android:textSize="@dimen/tx_small_12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contacts_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/contact_us_orange" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/contact_us"
+                                android:textSize="@dimen/tx_small_12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/register_as_agent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/join_us_orange" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/mitra_fast_app_captain"
+                                android:textSize="@dimen/tx_small_12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/register_as_provider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/join_us_orange" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/register_as_provider"
+                                android:textSize="@dimen/tx_small_12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/settings" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/settings"
+                                android:textSize="@dimen/tx_small_12sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/coupon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/coupon" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/my_coupons"
+                                android:textSize="@dimen/tx_small_12sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/payment_methods"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/card" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/payment_methods"
+                                android:textSize="@dimen/tx_small_12sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/digital_wallet_orange" />
+
+                            <TextView
+                                style="@style/menu_item_text"
+                                android:text="@string/wallet"
+                                android:textSize="@dimen/tx_small_12sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/log_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/ic_login_white" />
+
+                            <TextView
+                                android:id="@+id/tx_log_in"
+                                style="@style/menu_item_text"
+                                android:text="@string/login"
+                                android:textSize="@dimen/tx_small_12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/log_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/minu_item_contaioner">
+
+                            <ImageView
+                                style="@style/menu_item_icon"
+                                android:src="@drawable/ic_log_out_orange" />
+
+                            <TextView
+                                android:id="@+id/tx_log_out"
+                                style="@style/menu_item_text"
+                                android:text="@string/log_out"
+                                android:textSize="@dimen/tx_small_12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightGray" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.navigation.NavigationView>

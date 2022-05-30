@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MVVM.Common.Login.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/complete_data"
+                android:textColor="@color/colorPrimary"
+                android:textSize="36sp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="@dimen/medium_margin">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile_pic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:civ_border_width="1.5dp"
+                    app:civ_border_color="@color/colorPrimary"
+                    android:src="@drawable/ic_profile" />
+
+                <ImageView
+                    android:id="@+id/btn_add_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="16sp"
+                    android:src="@drawable/cam" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_dp"
+                android:text="@string/dd_image"
+                android:textSize="@dimen/tx_medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center"
+                android:padding="@dimen/small_dp"
+                android:text="@string/name"
+                android:textSize="@dimen/tx_medium" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@drawable/rounded_corner_gray_solid"
+                android:gravity="center"
+                android:padding="@dimen/medium_padding"
+                android:textSize="@dimen/tx_medium" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center"
+                android:padding="@dimen/small_dp"
+                android:text="@string/email"
+                android:textSize="@dimen/tx_medium" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@drawable/rounded_corner_gray_solid"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/medium_padding"
+                android:textSize="@dimen/tx_medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/cb_accept_term_and_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/agree_on"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text" />
+
+                <EditText
+                    android:id="@+id/et_term_and_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:text="@string/terms_and_conditions"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/small_text" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/large_margin"
+                android:background="@drawable/rounded_corner_dark_gray_solid"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_medium" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

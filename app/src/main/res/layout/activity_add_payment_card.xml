@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_card" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:onClick="onBackClick"
+            android:src="@drawable/back_button" />
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/medium_dp"
+                android:src="@drawable/add_card_image" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/medium_dp"
+                android:gravity="center"
+                android:padding="@dimen/small_dp"
+                android:text="@string/card_number"
+                android:textSize="@dimen/tx_medium" />
+
+            <EditText
+                android:id="@+id/et_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="@dimen/medium_dp"
+                android:background="@drawable/rounded_corner_dark_gray_solid"
+                android:backgroundTint="@color/gray"
+                android:gravity="start"
+                android:hint="@string/enter_card_number"
+                android:inputType="number"
+                android:padding="@dimen/medium_padding"
+                android:textSize="@dimen/tx_medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/medium_dp"
+                android:gravity="center"
+                android:padding="@dimen/small_dp"
+                android:text="@string/name"
+                android:textSize="@dimen/tx_medium" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="@dimen/medium_dp"
+                android:background="@drawable/rounded_corner_dark_gray_solid"
+                android:backgroundTint="@color/gray"
+                android:gravity="start"
+                android:hint="@string/enter_your_name"
+                android:padding="@dimen/medium_padding"
+                android:textSize="@dimen/tx_medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/medium_margin"
+                android:gravity="center"
+                android:padding="@dimen/small_dp"
+                android:text="@string/expiry_date"
+                android:textSize="@dimen/tx_medium" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/medium_dp"
+                android:background="@drawable/rounded_corner_dark_gray_solid"
+                android:backgroundTint="@color/gray">
+
+                <EditText
+                    android:id="@+id/et_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_dark_gray_solid"
+                    android:backgroundTint="@color/gray"
+                    android:gravity="center"
+                    android:hint="@string/year"
+                    android:inputType="number"
+                    android:padding="@dimen/medium_padding"
+                    android:textSize="@dimen/tx_medium" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/small_margin"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/et_month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_dark_gray_solid"
+                    android:backgroundTint="@color/gray"
+                    android:gravity="center"
+                    android:hint="@string/month"
+                    android:inputType="number"
+                    android:padding="@dimen/medium_padding"
+                    android:textSize="@dimen/tx_medium" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/large_dp"
+                android:background="@drawable/rounded_gray_solid"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/add_card"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_medium" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--        android:fitsSystemWindows="true"-->
+
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/help_center"
+                style="@style/item_title" />
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@android:color/transparent"
+                android:onClick="onBackClick"
+                android:src="@drawable/back_button" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_help_and_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_gray_solid"
+                android:backgroundTint="@color/white"
+                android:translationZ="4dp"
+                android:layout_margin="@dimen/small_margin"
+                android:padding="@dimen/medium_padding"
+                android:drawableStart="@drawable/help_ic"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/small_margin"
+                android:textColor="@color/black"
+
+                android:text="@string/help_center"
+                app:drawableEndCompat="@drawable/orange_arrow" />
+
+            <TextView
+                android:id="@+id/tv_faqs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/small_margin"
+                android:textColor="@color/black"
+
+                android:layout_margin="@dimen/small_margin"
+                android:background="@drawable/rounded_corner_gray_solid"
+                android:backgroundTint="@color/white"
+                android:translationZ="4dp"
+                android:padding="@dimen/medium_padding"
+                android:text="@string/faqs"
+                android:drawableStart="@drawable/faq_ic"
+                app:drawableEndCompat="@drawable/orange_arrow" />
+            <TextView
+                android:id="@+id/tv_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/small_margin"
+                android:textColor="@color/black"
+
+                android:layout_margin="@dimen/small_margin"
+                android:background="@drawable/rounded_corner_gray_solid"
+                android:backgroundTint="@color/white"
+                android:translationZ="4dp"
+                android:drawableStart="@drawable/terms_ic"
+                android:padding="@dimen/medium_padding"
+                android:text="@string/terms_and_conditions"
+                app:drawableEndCompat="@drawable/orange_arrow" />
+            <TextView
+                android:id="@+id/tv_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:background="@drawable/rounded_corner_gray_solid"
+                android:backgroundTint="@color/white"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/small_margin"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/contact_us_ic"
+                android:translationZ="4dp"
+                android:padding="@dimen/medium_padding"
+                android:text="@string/contact_us"
+                app:drawableEndCompat="@drawable/orange_arrow" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

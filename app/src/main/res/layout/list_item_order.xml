@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container"
+    android:layout_marginTop="@dimen/small_margin"
+    android:background="@drawable/rounded_corner_gray_stroke"
+    android:orientation="vertical"
+    android:padding="@dimen/small_padding">
+
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="# 29" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/shop_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="top"
+            android:src="@drawable/logo_holder"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:drawablePadding="@dimen/small_padding"
+                app:drawableStartCompat="@drawable/ic_time"
+                tools:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/order_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:drawablePadding="@dimen/small_padding"
+                android:gravity="start"
+                app:drawableStartCompat="@drawable/ic_location"
+                tools:text="يبسيبسببسبسبسيبسيبسيبسيب\ىسيبيييبسيبسبسبسبسسبسثبثببسبببسب" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:drawablePadding="@dimen/small_padding"
+        app:drawableStartCompat="@drawable/ic_battery"
+        tools:text="@string/app_name" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/track"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/darkerGray" />
+
+        <TextView
+            android:id="@+id/action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:drawablePadding="@dimen/small_padding"
+            android:text="@string/track_order"
+            app:drawableEndCompat="@drawable/ic_forward_arrow"
+            app:drawableStartCompat="@drawable/ic_tracking" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:elevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MVVM.Agent.Main.MainActivity">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_menu_mark"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:fabCustomSize="34dp"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="10dp" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageButton" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ic_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_notifications_none_24px"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:fabCustomSize="34dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="10dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_dp"
+                app:layout_constraintTop_toBottomOf="@id/logo">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium_dp"
+                    android:background="@color/gray"
+                    android:padding="@dimen/small_dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile_pic"
+                        android:layout_width="65dp"
+                        android:layout_height="70dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:src="@drawable/logo_holder" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/medium_dp"
+                        android:layout_marginTop="@dimen/medium_dp"
+                        android:singleLine="true"
+                        app:layout_constraintStart_toEndOf="@id/iv_profile_pic"
+                        app:layout_constraintTop_toTopOf="@id/iv_profile_pic"
+                        tools:text="صالح أحمد" />
+
+                    <TextView
+                        android:id="@+id/tv_membership"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/membership_num"
+                        android:textSize="@dimen/tx_medium"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/tv_name"
+                        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/delivery_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/ready_to_receive"
+                        app:thumbTint="@drawable/newthumb"
+                        app:trackTint="@drawable/newtrack" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/is_profile_approved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/not_approved_yet"
+                    android:textSize="@dimen/tx_medium" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="18dp"
+                            android:background="@android:color/transparent"
+                            android:drawablePadding="@dimen/medium_dp"
+                            android:paddingVertical="@dimen/medium_dp"
+                            android:text="@string/wallet_balance"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tx_medium" />
+
+
+                        <TextView
+                            android:id="@+id/wallet_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="18dp"
+                            android:background="@android:color/transparent"
+                            android:drawablePadding="@dimen/medium_dp"
+                            android:paddingVertical="@dimen/medium_dp"
+                            android:singleLine="true"
+                            android:text="..."
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:cardBackgroundColor="#F1F2F2"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="2dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_completed_orders"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/completed_orders"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/tv_name"
+                            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        app:cardBackgroundColor="#F1F2F2"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="2dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_canceled_order"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/canceled_orders"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/tv_name"
+                            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_offers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/list_item_new_order" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/header_user_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="@dimen/large_dp"
+                        android:src="@mipmap/main_logo"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/header_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/neosansarabic"
+                        android:padding="@dimen/small_dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView"
+                        app:layout_constraintStart_toStartOf="@+id/imageView"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView"
+                        tools:text="أحمد الخالدي " />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- الرئيسية-->
+                        <LinearLayout
+                            android:id="@+id/home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/ic_main_inactive_orange" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/main" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+                        </LinearLayout>
+
+                        <!--حسابي  -->
+                        <LinearLayout
+                            android:id="@+id/profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/profile_orange" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/profile" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+                        </LinearLayout>
+
+                        <!-- الطلبات السابقه-->
+                        <LinearLayout
+                            android:id="@+id/finished_orders"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/ic_orders_inactive_orange" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/finished_orders" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+                        </LinearLayout>
+
+                        <!--  الحركه المالية -->
+                        <LinearLayout
+                            android:id="@+id/financial_movement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/digital_wallet_orange" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/financial_movement" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+                        </LinearLayout>
+
+                        <!--   الحساب البنكي -->
+                        <LinearLayout
+                            android:id="@+id/bank_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/ic_bank_orange" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/bank_account" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+                        </LinearLayout>
+
+                        <!--    الشروط ولاحكام -->
+                        <LinearLayout
+                            android:id="@+id/terms_and_conditions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/ic_orders_inactive_orange" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/terms_and_conditions" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+                        </LinearLayout>
+
+                        <!--   عن ميترا فاست -->
+                        <LinearLayout
+                            android:id="@+id/about_us"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/ic_logo" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/about_us" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+                        </LinearLayout>
+
+                        <!--  تواصل معنا-->
+                        <LinearLayout
+                            android:id="@+id/contacts_us"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/contact_us_orange" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/contact_us" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+
+                        </LinearLayout>
+
+                        <!--الاسائلةالشائعة -->
+                        <LinearLayout
+                            android:id="@+id/faq"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/faq_orange" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/faq"
+                                    android:textSize="@dimen/tx_medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+                        </LinearLayout>
+
+                        <!--   تسجيل خروج-->
+                        <LinearLayout
+                            android:id="@+id/log_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout style="@style/minu_item_contaioner">
+
+                                <ImageView
+                                    style="@style/menu_item_icon"
+                                    android:src="@drawable/ic_log_out_orange" />
+
+                                <TextView
+                                    style="@style/menu_item_text"
+                                    android:text="@string/log_out"
+                                    android:textSize="@dimen/tx_medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightGray" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

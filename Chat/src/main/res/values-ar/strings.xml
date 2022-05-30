@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    WhatsAppView-->
+    <string name="slide_to_cancel">اسحب للالغاء</string>
+    <string name="type_a_message">أكتب رسالة</string>
+    <string name="photo">صورة</string>
+    <string name="voice_message">رسالة صوتية</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="attention">انتبه!</string>
+    <string name="remove_message_dialog_message">هل أنت متأكد من مسح هذه الرسالة؟</string>
+    <string name="copied_to_clipboard">تم نسخ الرسالة إلى الحافظة</string>
+    <string name="i_sent_a_voice">أرسلت إليك تسجيلا</string>
+    <string name="you_cant_type_email_in_chat">غير مسموح بكتابة بريد الكتروني في المحادثة</string>
+    <string name="you_cant_type_mobile_number_in_chat">غير مسموح بكتابة رقم هاتف في المحادثة</string>
+
+    <string name="i_sent_an_image">أرسلت صورة إليك</string>
+    <string name="i_sent_images">أرسلت إليك مجموعة من الصور</string>
+    <string name="you_deleted_this_message">لقد قمت بمسح هذه الرسالة</string>
+    <string name="this_message_was_deleted">هذه الرسالة تم مسحها</string>
+    <string name="delete">مسح</string>
+    <string name="reply">رد</string>
+    <string name="copy">نسخ</string>
+    <string name="show_store_location">إظهار موقع المتجر</string>
+    <string name="show_customer_location">إظهار موقع العميل</string>
+    <string name="cancel_order">إلغاء الطلبr</string>
+</resources>
+

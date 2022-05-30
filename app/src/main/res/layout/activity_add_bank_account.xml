@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bank_account"
+            style="@style/item_title" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:onClick="onBackClick"
+            android:src="@drawable/back_button" />
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/large_dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:padding="@dimen/small_dp"
+                    android:text="@string/account_owner_name"
+                    android:textSize="@dimen/tx_medium" />
+
+                <EditText
+                    android:id="@+id/et_account_owner_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@drawable/rounded_corner_gray_solid"
+                    android:gravity="center"
+                    android:padding="@dimen/medium_padding"
+                    android:textSize="@dimen/tx_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:padding="@dimen/small_dp"
+                    android:text="@string/iban_num"
+                    android:textSize="@dimen/tx_medium" />
+
+                <EditText
+                    android:id="@+id/et_IBAN_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+
+                    android:background="@drawable/rounded_corner_gray_solid"
+                    android:drawableLeft="@drawable/ic_sa"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="22"
+                    android:padding="@dimen/medium_padding"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/tx_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:padding="@dimen/small_dp"
+                    android:text="@string/bank_type"
+                    android:textSize="@dimen/tx_medium" />
+
+                <TextView
+                    android:id="@+id/bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+
+                    android:background="@drawable/rounded_corner_gray_solid"
+                    android:gravity="center"
+                    android:hint="@string/choose_bank"
+                    android:padding="@dimen/medium_padding"
+                    android:textSize="@dimen/tx_medium"
+                    app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                <Button
+                    android:id="@+id/btn_Add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="36dp"
+                    android:background="@drawable/rounded_orange_solid"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tx_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

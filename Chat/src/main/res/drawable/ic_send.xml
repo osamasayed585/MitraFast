@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:autoMirrored="true"
+    android:viewportWidth="85"
+    android:viewportHeight="85">
+    <path
+        android:fillColor="@color/colorPrimaryTo_Mitra"
+        android:pathData="M42.5,42.5m-42.5,0a42.5,42.5 0,1 1,85 0a42.5,42.5 0,1 1,-85 0" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M61.59,38.311 L26.767,23.861A4.168,4.168 0,0 0,21.131 28.74l3.1,12.155L39.406,40.895a1.265,1.265 0,0 1,0 2.529L24.23,43.424L21.131,55.58A4.168,4.168 0,0 0,26.767 60.459L61.59,46.01a4.168,4.168 0,0 0,0 -7.7Z" />
+</vector>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/small_dp"
+    android:background="@color/gray"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/small_dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile_pic"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        tools:src="@drawable/logo_holder" />
+
+
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/tx_medium"
+        android:textStyle="bold"
+        tools:text="صالح أحمد" />
+
+
+    <ImageView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/orange_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

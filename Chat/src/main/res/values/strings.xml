@@ -1,0 +1,27 @@
+<resources>
+
+    <!--    WhatsAppView-->
+    <string name="slide_to_cancel">"Slide to cancel"</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="photo">Photo</string>
+    <string name="voice_message">Voice message</string>
+    <string name="attention">Attention!</string>
+    <string name="remove_message_dialog_message">Are you sure you want to delete message?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="copied_to_clipboard">Message is copied to clipboard</string>
+    <string name="i_sent_a_voice">I sent a voice</string>
+    <string name="you_cant_type_email_in_chat">You can\'t type email in chat</string>
+    <string name="you_cant_type_mobile_number_in_chat">You can\'t type mobile number in chat</string>
+
+    <string name="i_sent_an_image">I sent an Image</string>
+    <string name="i_sent_images">I sent Images</string>
+    <string name="you_deleted_this_message">You deleted this message</string>
+    <string name="this_message_was_deleted">This message was deleted</string>
+    <string name="delete">Delete</string>
+    <string name="reply">Reply</string>
+    <string name="copy">Copy</string>
+    <string name="show_store_location">Show store location</string>
+    <string name="show_customer_location">Show customer location</string>
+    <string name="cancel_order">Cancel order</string>
+</resources>

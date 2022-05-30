@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center|start"
+        android:background="@android:color/transparent"
+        android:onClick="onBackClick"
+        android:src="@drawable/back_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:padding="@dimen/small_margin"
+        android:textColor="@color/black"
+        tools:text="@string/order_status"
+        android:id="@+id/tv_name"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:background="@android:color/transparent"
+        android:onClick="onCartClick"
+        android:src="@drawable/offers"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="0dp"
+        app:fabCustomSize="50dp"
+        tools:visibility="visible" />
+</FrameLayout>

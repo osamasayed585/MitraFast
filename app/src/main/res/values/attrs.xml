@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ParallelogramView">
+        <attr format="integer" name="parallelogram_angle"/>
+        <attr format="enum" name="parallelogram_position">
+        <enum name="bottom" value="1"/>
+        <enum name="top" value="2"/>
+        <enum name="left" value="3"/>
+        <enum name="right" value="4"/>
+    </attr><attr format="enum" name="parallelogram_direction">
+        <enum name="left" value="1"/>
+        <enum name="right" value="2"/>
+    </attr></declare-styleable>
+</resources>

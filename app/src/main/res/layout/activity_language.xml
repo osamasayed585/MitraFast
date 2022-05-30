@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MVVM.Common.Language.LanguageActivity">
+    <FrameLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+    >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            style="@style/item_title"/>
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:onClick="onBackClick"
+            android:src="@drawable/back_button" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/btn_arabic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:translationZ="4dp"
+        android:drawablePadding="@dimen/small_margin"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@drawable/rounded_corner_orange_solid"
+        android:backgroundTint="@color/white"
+        android:text="@string/arabic"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tx_medium"
+        app:drawableStartCompat="@drawable/palastien" />
+
+    <TextView
+        android:id="@+id/btn_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:translationZ="4dp"
+        android:drawablePadding="@dimen/small_margin"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@drawable/rounded_corner_orange_solid"
+        android:backgroundTint="@color/white"
+        android:text="@string/english"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tx_medium"
+        app:drawableStartCompat="@drawable/us" />
+</LinearLayout>

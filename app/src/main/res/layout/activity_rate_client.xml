@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MVVM.Client.OrderSuccessfullyListed.OrderSuccessfullyListedActivity">
+    <include
+        layout="@layout/action_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/action_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/action_bar"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/home"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/order_success"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/medium_dp"
+            android:src="@drawable/done_order"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.234" />
+
+        <TextView
+            android:id="@+id/order_has_been_delivered_successfully"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_dp"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/medium_dp"
+            android:textStyle="bold"
+            android:paddingVertical="4dp"
+            android:text="@string/order_has_been_delivered_successfully"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/order_success"
+            app:layout_constraintStart_toStartOf="@id/order_success"
+            app:layout_constraintTop_toBottomOf="@id/order_success" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/order_has_been_delivered_successfully"
+            app:layout_constraintStart_toStartOf="@+id/order_has_been_delivered_successfully"
+            app:layout_constraintTop_toBottomOf="@id/order_has_been_delivered_successfully">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/neosansarabic"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:text="تاريخ الطلب "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/neosansarabic"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="#20000 " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/order_has_been_delivered_successfully"
+            app:layout_constraintStart_toStartOf="@+id/order_has_been_delivered_successfully"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/neosansarabic"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:text="رقم الطلب "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/neosansarabic"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="#20000 " />
+        </LinearLayout>
+
+
+
+
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_dp"
+            android:stepSize="1"
+            android:theme="@style/mRatingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+
+            />
+
+
+        <TextView
+            android:id="@+id/rate_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_dp"
+            android:layout_marginTop="@dimen/large_dp"
+            android:background="@drawable/rounded_orange_solid"
+            android:paddingHorizontal="@dimen/medium_dp"
+            android:paddingVertical="@dimen/tx_small"
+            android:text="@string/rate_client"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tx_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rating" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_dp"
+        android:layout_marginTop="@dimen/large_dp"
+        android:background="@drawable/rounded_orange_stroke"
+        android:text="@string/main"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tx_medium"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
